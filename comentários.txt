@@ -1,0 +1,22 @@
+# Criar projeto
+
+Criar pasta com o nome do projeto -> abrir terminal na pasta -> $ django-admin startproject <nome_do_projeto> .
+$ python manage.py startapp <nome_do_app> -> Criar um app
+
+# Namespaces 
+
+Criar dentro do seu app uma pasta de template e dentro dessa pasta 
+de template outra pasta com o nome do seu app, para evitar que o django
+pegue os arquivos de outra pasta.
+
+exemplo: home/template/home/index.html | blog/template/blog/index.html
+
+Obs: O Django não é um servidor, o manage.py runserver é apenas para ambiente de desnvolvimento
+
+$ python manage.py collectstatic -> pegar arquivos estaticos
+
+Obs: Se for alterar algum arquivo estatico da pasta base/global/static/ deve executar esse comando novamente
+para que os arquivos da pasta static_files sejam coletados novamente e atualizados.
+
+https://whitenoise.readthedocs.io/en/latest/ -> Serve para prover os arquivos estáticos para o django fora
+do ambiente de desenvolvimento.
