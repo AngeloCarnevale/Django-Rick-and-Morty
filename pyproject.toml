@@ -9,6 +9,7 @@ packages = [{include = "django_rick_and_morty"}]
 [tool.poetry.dependencies]
 python = "^3.11"
 Django = "^4.2.4"
+requests = "^2.31.0"
 
 
 [build-system]
