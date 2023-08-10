@@ -6,4 +6,6 @@
 
 <code>$ poetry install</code>
 
-<code>$ </code>
+<code>$ python manage.py migrate</code>
+
+<code>$ python manage.py runserver</code>
