@@ -2,19 +2,11 @@ from django.shortcuts import render
 from django.http import HttpRequest, Http404
 from django.core.paginator import Paginator
 from characters.data import posts
-import requests
 
-
-# def forPosts():
-#     posts = []
-#     # for i in range(10):
-#     posts.append(requests.get(f"https://rickandmortyapi.com/api/character?page={1}").json()["results"])
-#     print(posts)    
-#     return posts
     
 # Create your views here.
 def characters(request):
-    postPaginator = Paginator(posts, 10)
+    postPaginator = Paginator(posts, 100)
     page_num = request.GET.get('page')
     page = postPaginator.get_page(page_num)
     

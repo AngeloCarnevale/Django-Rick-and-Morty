@@ -130,6 +130,27 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "fontawesome"
+version = "5.10.1.post1"
+description = "The Font Awesome icon set for python"
+optional = false
+python-versions = "*"
+files = [
+    {file = "fontawesome-5.10.1.post1-py3-none-any.whl", hash = "sha256:642d74da5f4726bb2c8f035a2f4a98fdc4294d213a291994ee0b3d845166f9e8"},
+    {file = "fontawesome-5.10.1.post1.tar.gz", hash = "sha256:1b5e8f2ed12a74b88aef6f404ff770af425324041bc5620523a802d5406595b8"},
+]
+
+[[package]]
+name = "fontawesomefree"
+version = "6.4.2"
+description = "Font Awesome Free"
+optional = false
+python-versions = "*"
+files = [
+    {file = "fontawesomefree-6.4.2-py3-none-any.whl", hash = "sha256:ceaff7efc4fc39dadff3c3ff7298a7a1095403110d373f22456bb1c34ab6db02"},
+]
+
+[[package]]
 name = "idna"
 version = "3.4"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -208,4 +229,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "9fabc8d791c4ecfcbaedd479827590ebd02039482584f8ff7930d5c47fc98108"
+content-hash = "94442e4cbedaaf03435582513379637a4b408b8f36bffd5f81fb622aa24d95bd"

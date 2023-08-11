@@ -1,12 +1,20 @@
 
 <article class="post">
-    <header>
+    <div>
+        <img src="{{post.image}}" alt="Imagem do personagem">
+    </div>
+
+    <div class="post__body">
         <h2 class="post__title">
             <a href="{% url 'characters:character' post.id %}">{{post.name}}</a>
         </h2>
-    </header>
-    <div class="post__body">
-        <img src="{{post.image}}" alt="Imagem do personagem">
+        <div class="stats">
+            <i class="fa-solid fa-circle"></i>
+            <p class="status"> {{post.status}}</p> 
+            <p> - {{post.species}}</p>
+        </div>
+        
+        
         <p>{{post.location.name}}</p>
     </div>
 </article>

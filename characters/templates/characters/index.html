@@ -14,8 +14,7 @@
         {% endif %}
 
         {% if page.has_next%}
-            <a href="{% url 'characters:index' %}?page={{page.next_page_number}}">next</a>
+            <a id="next" href="{% url 'characters:index' %}?page={{page.next_page_number}}">next</a>
         {% endif %}
-        
     </div>
 {% endblock posts %}
