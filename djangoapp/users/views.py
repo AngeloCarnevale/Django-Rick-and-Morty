@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http.response import HttpResponse  
 from django.contrib.auth.models import User
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 
 # Create your views here.
 def cadastro(request):
@@ -15,10 +15,10 @@ def cadastro(request):
         user = User.objects.filter(username=username).first()
         
         if user:
-            return HttpResponse("Usuário já cadastrado")
+            return redirect("/auth/cadastro")
         
         else:
-            user = User.objects.create_user(username, email, senha, is_staff=True)
+            user = User.objects.create_user(username, email, senha)
             user.save()
             return redirect("/auth/login")
 
@@ -39,4 +39,8 @@ def userLogin(request):
             return redirect('/')
         else:
             return HttpResponse("Erro")
+
+def userLogout(request):
+    logout(request)
+    return redirect("/auth/login")
             

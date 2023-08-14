@@ -49,6 +49,13 @@ a:hover {
 .green {
     color: green;
 }
+.text-account {
+    font-size:0.6em;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
 .post p {
     font-weight:700;
 }

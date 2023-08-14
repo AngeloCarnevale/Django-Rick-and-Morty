@@ -1,4 +1,4 @@
-const stats = document.getElementsByTagName('i')
+const stats = document.getElementsByClassName("fa-circle")
 const colecao = document.querySelectorAll(".status")
 
 
