@@ -1,0 +1,15 @@
+{% extends 'global/base.html' %}
+
+{% block cadastro %}
+    <div class="div-form">
+        <h2>Cadastro</h2>
+        <form action="{% url 'cadastro' %}" method="POST">{% csrf_token %}  
+
+            <input type="text" name="username" placeholder="Username">
+            <input type="email" name="email" placeholder="E-mail">
+            <input type="password" name="senha" placeholder="Senha">
+            
+            <input type="submit" value="Cadastrar">
+        </form>
+    </div>
+{% endblock cadastro %}

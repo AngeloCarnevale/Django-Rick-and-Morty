@@ -1,0 +1,22 @@
+{% extends 'global/base.html' %}
+
+
+{% block posts %}
+    <article class="post post-single">
+        <img src="{{post.image}}" alt="Imagem do personagem">
+           
+        <div class="post__body">
+            <h2 class="post__title">
+                <h1>{{post.name}}</h1>
+            </h2>
+            <div class="infos">
+                <p>Name: {{post.name}}</p>
+                <p>Status: {{post.status}}</p>
+                <p>Specie: {{post.species}}</p>
+                <p>Gender: {{post.gender}}</p>
+                <p>Origin: {{post.origin.name}}</p>
+                <p>Location: {{post.location.name}}</p>
+            <div>
+        </div>
+    </article>
+{% endblock posts %}

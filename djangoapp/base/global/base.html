@@ -1,0 +1,19 @@
+{% include 'global/partials/head.html' %}
+
+{% if user.is_authenticated %}
+    {% include 'global/partials/menu.html' %}
+{% endif %}
+
+
+
+{% load static %}
+<main class="content">
+    {% block posts %}{% endblock posts %}
+    {% block cadastro %}{% endblock cadastro %}
+    {% block login %}{% endblock login %}
+</main>
+
+    <script src="{% static '/global/js/index.js' %}"></script>
+</body>
+
+</html>

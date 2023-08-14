@@ -1,0 +1,19 @@
+{% extends 'global/base.html' %}
+
+
+{% block posts %}
+    {% for post in page %} 
+        {% include 'global/partials/postBlock.html' %}
+    {% endfor %}
+
+    <div class="buttons">
+        {% if page.has_previous %}
+            <a class="buttonPage" href="{% url 'characters:index' %}?page={{page.previous_page_number}}">previous</a>
+        {% endif %}
+
+        {% if page.has_next%}
+            <a class="buttonPage"  href="{% url 'characters:index' %}?page={{page.next_page_number}}">next</a>
+        {% endif %}
+    </div>
+    
+{% endblock posts %}

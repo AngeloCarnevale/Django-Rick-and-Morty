@@ -1,0 +1,14 @@
+{% extends 'global/base.html' %}
+
+
+{% block login %}
+    <div class="div-form">
+        <h2>Sign in</h2>
+        <form action="{% url 'login' %}" method="POST">{% csrf_token %} 
+            <input type="text" name="username" placeholder="Username">
+            <input type="password" name="senha" placeholder="Senha">
+            <input type="submit" value="Sign in">
+        </form>
+    </div>
+{% endblock login %}
+    
