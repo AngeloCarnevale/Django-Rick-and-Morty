@@ -1,11 +1,11 @@
 # Runing the project
 
-<code>$ git clone https://github.com/AngeloCarnevale/Django-Rick_and_Morty.git</code>
+<samp>$ git clone https://github.com/AngeloCarnevale/Django-Rick_and_Morty.git</samp>
 
-<code>$ poetry shell</code>
+<kbd>$ poetry shell</kbd>
 
-<code>$ poetry install</code>
+<var>$ poetry install</var>
 
-<code>$ python manage.py migrate</code>
+<pre>$ python manage.py migrate</pre>
 
 <code>$ python manage.py runserver</code>
